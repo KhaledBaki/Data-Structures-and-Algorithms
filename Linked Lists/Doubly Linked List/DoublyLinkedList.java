@@ -1,71 +1,73 @@
-public class DoublyLinkedList {
+public class DoublyLinkedList<genericType> {
 
     // Head
-    private DoublyLinkedListNode doublyLinkedList;
+    private DoublyLinkedListNode<genericType> head;
 
     // Tail
-    private DoublyLinkedListNode tail;
+    private DoublyLinkedListNode<genericType> tail;
 
+    // Constructor
     public DoublyLinkedList(int size) {
         if (size <= 0 ) {
-            doublyLinkedList = null;
+            head = null;
             tail = null;
         }
         else {
-
             // First node
-            doublyLinkedList = new DoublyLinkedListNode(0); 
+            head = new DoublyLinkedListNode(0); 
+            tail = head;
 
-            tail = doublyLinkedList;
-
+            // Add remaining nodes
             for (int i = 1; i < size; i++) {
                 DoublyLinkedListNode node = new DoublyLinkedListNode(i);
                 tail.setNext(node);
                 node.setPrev(tail);
                 tail = tail.getNext();
             }
-
         }
     }
     
     public void print() {
-        DoublyLinkedListNode current = doublyLinkedList;
+        DoublyLinkedListNode<genericType> current = head;
 
         // go through all the nodes
         while(current != null){
             System.out.print(current.getVal());
+
+            // Move cursor
             current = current.getNext();
         }
         System.out.println();
     }
 
     public void deleteFirst() {
-
-        if (doublyLinkedList != null){
+        if (head != null){
 
             // one node case
-            if (doublyLinkedList == tail){
-                doublyLinkedList = null;
+            if (head == tail){
+                head = null;
                 tail = null;
-            
+            }
+
             // more than one node
-            } else{
-                doublyLinkedList = doublyLinkedList.getNext();
-                doublyLinkedList.setPrev(null);
+            else{
+                head = head.getNext();
+                head.setPrev(null);
             }
         }
     }
 
     public void deleteLast() {
-        if (doublyLinkedList != null){
+        if (head != null){
 
             // one node case
-            if (doublyLinkedList == tail){
-                doublyLinkedList = null;
+            if (head == tail){
+                head = null;
                 tail = null;
+            } 
             
             // more than one node
-            } else{
+            else{
                 tail = tail.getPrev();
                 tail.setNext(null);
             }
@@ -74,7 +76,7 @@ public class DoublyLinkedList {
 
     // create and display a linked list
     public static void main(String [] args){
-        DoublyLinkedList list = new DoublyLinkedList( 5 );
+        DoublyLinkedList<Integer> list = new DoublyLinkedList<Integer>( 5 );
         
         list.print();
         
