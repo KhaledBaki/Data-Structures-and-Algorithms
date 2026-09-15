@@ -6,3 +6,5 @@ This repository holds multiple data structures and algorithms concepts and examp
 - Linked Lists
     - Singly Linked Lists
     - Doubly Linked Lists
+- Big-O Notation (More in depth insights to be added)
+    - Proving an Algorithm's Complexity
