@@ -12,7 +12,7 @@ How much memory is used up by the algorithm to run to completion.
 ## Types of Notation
 ### Big-O Notation
 ```
-Mathematical Proof: 0 < f(n) < c * g(n)
+Mathematical Proof: 0 < f(n) < c * g(n) so any function less than c * g(n) is valid
 Where n is the number of terms getting passed through.
 Where f(n) is the number of operations  as a function of n.
 
@@ -22,8 +22,14 @@ N must be a positive integer
 
 ```
 ### Big Omega Notation
+```
+f(n) > c * g(n)
+```
 
 ### Big Theta Notation
+```
+c1 * g(n) <= f(n) <= c2 * g(n)
+```
 
 ## Big O Diagram
 <img width="572" height="349" alt="image" src="https://github.com/user-attachments/assets/43a23005-938c-4844-855f-295e8b86826f" />
