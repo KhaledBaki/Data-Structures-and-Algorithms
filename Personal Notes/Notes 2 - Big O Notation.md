@@ -34,6 +34,18 @@ c1 * g(n) <= f(n) <= c2 * g(n)
 ## Big O Diagram
 <img width="572" height="349" alt="image" src="https://github.com/user-attachments/assets/43a23005-938c-4844-855f-295e8b86826f" />
 
+## How to Calculate Number of Operations
+- Assignments: x = 5 (1 operation)
+- Arithmetic: x + y, i++ (1 operation per math symbol)
+- Comparisons: i < n (1 operation)
+- Array Indexing: A[] (1 operation)
+- Return Statements: return total (1 operation)
+### Sequential Statements
+With sequential statements you must simply add the number of operations each statement takes.
+
+### Nested Statements
+With nested statements you must simply multiply the number of operations each nested statement takes including the outer one.
+
 ## Basic Naming Conventions
 - O(1) = Constant Time
 - O(log n) = Logarithmic Time
