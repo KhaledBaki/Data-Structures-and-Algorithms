@@ -27,14 +27,14 @@ public class ReverseArray{
 
         // Print array
         System.out.println("Original Array:");
-        Array.print(integerArray);
+        ReverseArray.print(integerArray);
 
         // Reverse array
-        Array.reverseArray(integerArray);
+        ReverseArray.reverseArray(integerArray);
         System.out.println();
 
         // Print array
         System.out.println("Reversed Array:");
-        Array.print(integerArray);
+        ReverseArray.print(integerArray);
     }
 }
