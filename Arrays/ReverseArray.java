@@ -1,4 +1,4 @@
-public class Array{
+public class ReverseArray{
     public static <genericType> void reverseArray(genericType[] array){
         for (int i = 0; i < array.length / 2; i++){
             genericType temp = array[i];
