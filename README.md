@@ -3,8 +3,10 @@ This repository holds multiple data structures and algorithms concepts and examp
 
 ## Concepts Learned
 - Basic Array Fundamentals
+    - Method to Reverse Array in Place     
 - Linked Lists
     - Singly Linked Lists
+        - Three Pointer Method to Reverse Linked List  
     - Doubly Linked Lists
 - Big-O Notation (More in depth insights to be added)
     - Proving an Algorithm's Complexity
@@ -12,6 +14,4 @@ This repository holds multiple data structures and algorithms concepts and examp
 ## To be Added
 - Implement Stacks with linked lists
 - Implement queues with linked lists
-- Reverse Linked list implementation in Repo
-- Reverse Array implementation in repo
 - Add new notes
