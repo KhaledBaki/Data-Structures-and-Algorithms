@@ -13,5 +13,8 @@ This repository holds multiple data structures and algorithms concepts and examp
 
 ## To be Added
 - Implement Stacks with linked lists
+  - Arithmetic operations
+  - Palindrome Check with deque 
 - Implement queues with linked lists
 - Add new notes
+- add lists and array lists
