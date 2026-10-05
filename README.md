@@ -3,7 +3,8 @@ This repository holds multiple data structures and algorithms concepts and examp
 
 ## Concepts Learned
 - Basic Array Fundamentals
-    - Method to Reverse Array in Place     
+    - Method to Reverse Array in Place  
+    - Method to Check if Array is Palindrome   
 - Linked Lists
     - Singly Linked Lists
         - Three Pointer Method to Reverse Linked List  
