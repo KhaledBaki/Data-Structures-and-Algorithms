@@ -11,11 +11,17 @@ This repository holds multiple data structures and algorithms concepts and examp
     - Doubly Linked Lists
 - Big-O Notation (More in depth insights to be added)
     - Proving an Algorithm's Complexity
+- Implementing Stacks with a Linked Structure
+- Implementing Queues with a Linked Structure
+
 
 ## To be Added
-- Implement Stacks with linked lists
-  - Arithmetic operations
-  - Palindrome Check with deque 
-- Implement queues with linked lists
-- Add new notes
-- add lists and array lists
+- Binary Trees
+    - DFS
+    - BFS
+
+- Heaps
+    - Max Heap
+    - Min Heap
+    - Down-heap bubbling
+    - Up-heap bubbling
