@@ -31,3 +31,17 @@
 ### Heap Construction
 - We chose the last internal node, in the array based case i = floor((n - 1) - 1)/2, and then we work our way i-- to tackle each internal node. So at each internal node we do a down-heap algorithm. We skip the bottom height.
 - This construction takes overall O(n)
+
+
+### Heap Sort Algorithm
+1) Given a max-heap array we know that the root (first element) is the max term.
+2) We swap the root node with the last node, and decrement the size of the heap.
+3) Then we heapify the heap the swapped node by down-heap bubbling.
+4) Repeat.
+5) Once we are done, traversing the array would mean that it is sorted.
+
+### Summary
+- Heap must be a complete binary tree.
+- Removal, insertion, and construction are the key concepts
+- Heap sort in place (Array implementation).
+- Know how to index children and parent.
