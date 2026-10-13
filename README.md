@@ -19,6 +19,7 @@ This repository holds multiple data structures and algorithms concepts and examp
 - Binary Trees
     - DFS
     - BFS
+    - Binary Searching
 
 - Heaps
     - Max Heap
