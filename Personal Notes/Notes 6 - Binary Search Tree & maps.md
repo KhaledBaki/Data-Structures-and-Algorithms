@@ -32,3 +32,6 @@
 ### Binary Search Tree
 - The left child is the smaller.
 - The right child is the larger
+- An inOrderTraversal of a binary search tree will LITERALLY print out the values in order. (Very Helpful Tip!)
+- preOrder traversal: root -> left -> right
+- postOrder: left -> right -> root
