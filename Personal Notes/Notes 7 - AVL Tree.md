@@ -34,3 +34,6 @@ Node(Y)<--->Node(X)<--->Node(Z)
 
 - After that, reorder the subtrees to have the following order:
 T1, T2, T3, T4
+
+- After rebalancing from insertion, we only have to rebalance ONCE.
+- It is different for the case of deletion.
