@@ -11,7 +11,8 @@
 
 
 ### How to Store the Height
-- Once we insert a new node, we know that IT'S height is 0. THen we move up in the chain and add 1 to the height value of each parent (Ancestor).
+- Once we insert a new node, we know that IT'S height is 0. THen we move up in the chain and update the height value of each parent (Ancestor) with this formula: 
+Height: 1 + max(left.height, right.height)
 
 size(node) = size(node.left) + size(node.right) + 1
 

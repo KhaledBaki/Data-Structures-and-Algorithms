@@ -28,3 +28,5 @@
 ### How to Update the Height
 - You update the height of the root of the given subtree after each time you do the rebalancing algorithm: 
 height(node) = max(height(node.left), height(node.right)) + 1
+
+- For more clarity, when you delete a node with subtrees, the height of the subtrees is still the same and it doesnt change, however the parent of the node would change heights. If a parent had two kids, one of the kids had a height 5 and the other height 4, and we delete a node from the kids of height 4, we would have kids of height 5 and 3. The height of the parent node is always the max(kid1.height, kid2.height) + 1.
