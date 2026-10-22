@@ -13,6 +13,11 @@
 ### How to Store the Height
 - Once we insert a new node, we know that IT'S height is 0. THen we move up in the chain and add 1 to the height value of each parent (Ancestor).
 
+size(node) = size(node.left) + size(node.right) + 1
+
+(If a child is null, its size is treated as 0.)
+
+
 ### Two-Level Imbalance
 - When the difference is at most 2 between the left and the right subtrees.
 - After inserting or deleting, we need to find the first imbalanced node. That First imbalanced node is Z.
@@ -37,3 +42,4 @@ T1, T2, T3, T4
 
 - After rebalancing from insertion, we only have to rebalance ONCE.
 - It is different for the case of deletion.
+
