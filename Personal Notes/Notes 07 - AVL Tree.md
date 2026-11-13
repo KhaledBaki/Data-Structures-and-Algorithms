@@ -1,4 +1,4 @@
-# Notes 7 - AVL Tree
+# Notes 07 - AVL Tree
 ## Basic Rules
 - The difference in height between the right subtree and left subtree of each node must belong to the set {-1, 0, 1}
 

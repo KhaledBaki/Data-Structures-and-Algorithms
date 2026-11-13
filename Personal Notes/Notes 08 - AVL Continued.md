@@ -1,4 +1,4 @@
-# Notes 8 - AVL Continued
+# Notes 08 - AVL Continued
 ## Implementation Details for Rebalancing Trees
 - When the heights of the children of Z are the same go left, and same for Y
 

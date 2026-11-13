@@ -1,4 +1,4 @@
-# Notes 2 - Big O Notation
+# Notes 02 - Big O Notation
 ## Brief Explanation
 Big-O notation is used to classify, and determine the complexity of a computer algorithm. In other words, as the number of data increases, how does this algorithm behave?
 

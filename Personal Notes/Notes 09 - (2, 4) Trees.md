@@ -1,4 +1,4 @@
-# Notes 9 - (2, 4) Trees & Multi-way Trees
+# Notes 09 - (2, 4) Trees & Multi-way Trees
 ## Multi-way trees
 - Each node can have at most 3 elements
 - When we reach 4 elements, push the 3rd one to a higher node and split the rest into other lower nodes.

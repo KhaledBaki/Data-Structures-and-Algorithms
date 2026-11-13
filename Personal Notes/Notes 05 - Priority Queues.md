@@ -1,4 +1,4 @@
-# Notes 5 - Priority Queues
+# Notes 05 - Priority Queues
 
 ## Heap
 - Min-heap: Parent's key is less than or equal to both the children keys

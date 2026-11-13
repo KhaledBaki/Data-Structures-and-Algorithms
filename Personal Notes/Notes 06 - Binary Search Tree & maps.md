@@ -1,4 +1,4 @@
-# Notes 6 - Binary Search Tree & Maps
+# Notes 06 - Binary Search Tree & Maps
 ## Map (Associative Array)
 - A collection of key-value entries, the keys MUST be unique.
 - Operations (Search, Insert, Delete) on the map based on the key and NOT the index.

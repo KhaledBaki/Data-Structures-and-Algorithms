@@ -1,4 +1,4 @@
-# Notes 4 - Trees
+# Notes 04 - Trees
 ## Binary Trees
 - h + 1 <= n <= (2^(h+1)) - 1 nodes
 - 1 <= NE <= 2^h for the number of external nodes

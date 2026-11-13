@@ -1,4 +1,4 @@
-# Notes 3 - Stacks, Queues, & Deques.md
+# Notes 03 - Stacks, Queues, & Deques.md
 ## Stacks
 - Stacks follow a last-in first-out procedure also known as LIFO.
 - They can be implemented using a singly-linked list or with an array-based implementation.

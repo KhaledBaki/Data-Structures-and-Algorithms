@@ -1,4 +1,4 @@
-# Notes 1 - Arrays & Linked Lists
+# Notes 01 - Arrays & Linked Lists
 ## Arrays
 - Arrays have fixed lengths
 - DIRECT element access O(1) time complexity
