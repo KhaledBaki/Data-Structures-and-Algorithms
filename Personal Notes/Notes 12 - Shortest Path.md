@@ -26,7 +26,7 @@ if( d(u) + c(u, v) < d(v) ){
         d(v) = d(u) + c(u, v)
 }
 ```
-![alt text](<Screenshot 2026-11-12 135056.png>)
+![alt text](<assets/Screenshot 2026-11-12 135056.png>)
 
 ### Procedure:
 - Starting from the source node, the distance from the source to the source is 0, and every other vertex is set to have a distance of infinity.
@@ -40,6 +40,6 @@ if( d(u) + c(u, v) < d(v) ){
 
 - After this procedure, we would have found the shortest paths for all the nodes from the source.
 
-### Reference Video:
-Abdul Bari the DSA Goat! 🔽
+## Reference Video:
+Abdul Bari the DSA Goat! 
 https://www.youtube.com/watch?v=XB4MIexjvY0
