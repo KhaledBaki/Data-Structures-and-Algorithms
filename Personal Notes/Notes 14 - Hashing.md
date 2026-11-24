@@ -58,3 +58,53 @@ The above would be used to hash collection of elements, one example can be a wor
     - So when we hash an element and obtain its hash code, we go to the array at that index. If there already exists an element, we simply add it to the list at that given index.
 
 - Make sure that the modulo that you select to implement your hashing function is a prime number that is CLOSEST to the size of the array you are using to store the elements. For example, if you have an array of size 10, let N be 11 since it is the closest prime number to 10.
+
+## Probing (Open Addressing)
+### Linear Probing 
+```
+H_i(K) = [H(K) + i] mod N
+```
+- In the above formula we keep increasing i by one until it is sufficient to find an empty cell
+- Instead of separately chaining elements at an index, we find the NEXT empty spot in the array. Should the array be full near the end we can do a wrap around insertion.
+
+#### The Operations for Linear Probing:
+- Searching:
+    - It is the same way as searching for a chained hashmap, however since only one entry is being stored per spot, if there is an entry at the given cell, we keep probing further cells to see if there is an empty spot. If there is an empty spot fill it.
+    - If we search and keep probing and we hit an empty cell, we call that an unsuccessful search.
+        - IMPORTANT: If you are searching and you hit an "AVAILABLE" cell make sure to skip over it and continue searching!
+
+- Deleting:
+    - When deleting a key from the hashmap we can to first search with the probing search method above. When we find the element, we delete it and store a special entry "AVAILABLE" so that it doesn't cause an error next time you search for an element. This is crucial since earlier we said if we are searching and we hit an empty cell it means that the element is NOT in the hashmap.
+
+- Inserting:
+    - Get the hashcode, if there is already an element at that index probe until you find an empty or AVAILABLE cell.
+
+#### How to get the best performance:
+- The best performance for a linearly probed hashmap is when the number of keys is less than 50% of the array size.
+- When we approach that number we resize the array (double it) and find the next closest prime numebr and RE-hash each element so that next time you need to access them it is possible!
+
+### Quadratic Probing:
+```
+H_i(K) = [H(K) + i^2] mod N
+```
+- In the above formula we keep increasing i by one until it is sufficient to find an empty cell
+- This method risks skipping over empty cells since the growth is too fast!
+
+- However the math works out so that when the array size is a PRIME NUMBER and the number of keys is less than half the capacity of the array. Then quadratic probing is guaranteed to find an empty cell. 
+
+- if the searches reach N/2 then we can stop searching since that means that the element does not exist.
+
+- This method of probing follows the same methods of searching, deleting, and inserting as linear probing.
+
+## Double Hashing:
+```
+H_i(K) = [H(K) + i * D(k)] mod N
+
+D(K) = N - (K mod N)
+
+Where H_i(K) is the primary hash code of the entry
+Where i is an index
+where D(K) is secondary hashing function (Can be any hashing function)
+```
+
+- Two hashing functions are used.
